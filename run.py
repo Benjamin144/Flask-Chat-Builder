@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import datetime
 from flask import Flask, redirect
 
 
@@ -8,7 +9,8 @@ messages = []
 
 def add_messages(username, message):
     """Add messages to the messages list"""
-    messages.append("{}: {}".format(username, message)) 
+    now = datetime.now().strftime("%H:%M:%S")
+    messages.append("({}) {}: {}".format(now, username, message)) 
 
 def get_all_messages():
     """Get all of the messages and seperate them with a 'br'"""
