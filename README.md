@@ -15,3 +15,6 @@ This renders our messages in the browser, by outputting the messages as a string
 
 ## Adding Timestamps
 A timestamp that will enable us to show the time at which the message was sent by using Python's datetime module
+
+## Creating Users
+I will now store Users in a session variable. It allows us to persist usernames in a browser session to automatically redirect users to their homepage, by initialising a session and a variable
