@@ -22,4 +22,8 @@ I will now store Users in a session variable. It allows us to persist usernames 
 ## Storing Our Messages In A Dict
 I am going to create a dictionary that will allows us to store data using Key/Value pairs. This can be done using the my_dict = {}
 
+## Refactoring To Use chat.html Instead Of A Single String
+Using this HTML file will display our chat messages by passing it the necessary chat messages
+
+
 
