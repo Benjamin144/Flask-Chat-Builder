@@ -7,6 +7,16 @@
 </head>
 <body>
     <h1>Welcome, {{ username }}</h1>
-    {{ chat_messages }}
+    <!-- {{ chat_messages }} -->
+
+    {% for message in chat_messages %}
+        <p>({{ message.timestamp }}) {{ message.from }}: {{ message.message }}</p>
+    {% endfor %}
+
+    <script>
+        let timer = serTimeout(function() {
+            location.reload();
+        }, 5000)
+    </script>
 </body>
 </html>
