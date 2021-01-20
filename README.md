@@ -25,6 +25,19 @@ I am going to create a dictionary that will allows us to store data using Key/Va
 ## Refactoring To Use chat.html Instead Of A Single String
 Using this HTML file will display our chat messages by passing it the necessary chat messages
 
+## Simplifying Our Code
+What is it?
+
+Code refactoring
+
+What does it do?
+
+Simplifies our code
+How do you use it?
+
+By making our code more understandable
+
+
 ## Simple Long Polling With JavaScript
 I am going to use the Long polling, This method will refresh the page after a specified period of time by using JavaScript's setTimeout function and also explore a way of making the display look better
 
