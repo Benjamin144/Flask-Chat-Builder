@@ -28,4 +28,5 @@ Using this HTML file will display our chat messages by passing it the necessary 
 ## Simple Long Polling With JavaScript
 I am going to use the Long polling, This method will refresh the page after a specified period of time by using JavaScript's setTimeout function and also explore a way of making the display look better
 
-
+## Creating a Message Textbox
+A textbox to allow us to enter a message instead of using the URL, Improves the functionality of our chat app by creating a textbox and using the POST form method
