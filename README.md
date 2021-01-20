@@ -25,6 +25,11 @@ I am going to create a dictionary that will allows us to store data using Key/Va
 ## Refactoring To Use chat.html Instead Of A Single String
 Using this HTML file will display our chat messages by passing it the necessary chat messages
 
+## Heroku Deployment
+I will use Heroku to host our project by creating a new Heroku app to host our code
+
+
+
 ## Simplifying Our Code
 What is it?
 

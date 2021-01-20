@@ -5,7 +5,7 @@ from flask import Flask, redirect, render_template, request, session, url_for
 
 
 app = Flask(__name__)
-app.secret_key = "randomstring123"
+app.secret_key = os.getenv("SECRET", "randomstring123")
 messages = []
 
 def add_message(username, message):
@@ -47,8 +47,10 @@ def user(username):
         chat_messages = messages)
 
 
-app.run(
-        host=os.environ.get("IP", "0.0.0.0"),
-        port=int(os.environ.get("PORT", "5000")),
-        debug=True
-    )
+# app.run(
+        # host=os.environ.get("IP", "0.0.0.0"),
+        # port=int(os.environ.get("PORT", "5000")),
+        # debug=False
+    # )
+
+app.run(host=os.getenv("IP", "0.0.0.0"), port=int(os.getenv(os.getenv("PORT", "5000")), debug=False)
